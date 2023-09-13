@@ -15,7 +15,7 @@ Movies Service is backend service for managing movie data
 * Delete Movie
 
 ## Demo APIs:
-Import movies.swagger.json into your postman
+* In order to demo all apis in this movies service you can import movies.swagger.json file in proto folder into your postman
 
 ## Installation:
 * Step:
