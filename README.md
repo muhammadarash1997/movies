@@ -40,11 +40,11 @@ You can use REST or gRPC:
            $ docker exec -it <your_mysql_container_id> mysql -u root -p root
            ```
         - Move to use movie database by running the following command:
-           ```bash
+           ```mysql
            $ use movie
            ```
         - Run this following sql DDL command:
-           ```bash
+           ```mysql
            $ CREATE TABLE movies (
                     `id` int NOT NULL AUTO_INCREMENT,
                     `title` varchar(100) NOT NULL,
