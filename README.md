@@ -15,7 +15,7 @@ Movies Service is backend service for managing movie data
 * Delete Movie
 
 ## Demo APIs:
-You can use REST or gRPC:
+You have to do all things in the installation section before you make a demo. You can use REST or gRPC:
 * Using REST
    - In order to demo all apis in this movies service using rest connection, make sure you already have postman afterwards import movies.swagger.json file in proto folder into your postman
 * Using gRPC
