@@ -15,9 +15,10 @@ Movies Service is backend service for managing movie data
 * Delete Movie
 
 ## Demo APIs:
-* REST
+You can use REST or gRPC:
+* Using REST
    - In order to demo all apis in this movies service using rest connection, make sure you already have postman afterwards import movies.swagger.json file in proto folder into your postman
-* gRPC
+* Using gRPC
    - In order to demo all apis in this movies service using grpc connection, make sure you already have bloomrpc afterwards import movies.proto file in proto folder into your bloomrpc
 
 ## Installation:
