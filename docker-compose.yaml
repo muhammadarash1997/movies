@@ -1,0 +1,28 @@
+version: '2.2.3'
+services:
+  mysql-container:
+    image: mysql
+    ports:
+      - 3306:3306
+    env_file: .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+  server-container:
+    # image: backend-movies:v1
+    build: .
+    ports:
+      - 8080:8080
+    env_file: .env
+    environment:
+      SERVICE_IP: ${SERVICE_IP}
+      SERVICE_PORT: ${SERVICE_PORT}
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASS: ${DB_PASS}
+    depends_on:
+      - mysql-container

@@ -1,0 +1,17 @@
+type: google.api.Service
+config_version: 3
+
+http:
+  rules:
+    - selector: grpc.MoviesService.GetMovieList
+      get: /Movies
+    - selector: grpc.MoviesService.GetMovieDetail
+      get: /Movies/{id}
+    - selector: grpc.MoviesService.AddMovie
+      post: /Movies
+      body: "*"
+    - selector: grpc.MoviesService.UpdateMovie
+      patch: /Movies/{id}
+      body: "*"
+    - selector: grpc.MoviesService.DeleteMovie
+      delete: /Movies/{id}
