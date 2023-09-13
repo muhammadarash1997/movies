@@ -14,6 +14,9 @@ Movies Service is backend service for managing movie data
 * Update Movie
 * Delete Movie
 
+## Demo APIs:
+Import movies.swagger.json into your postman
+
 ## Installation:
 * Step:
     * Note:
